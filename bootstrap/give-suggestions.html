@@ -24,32 +24,32 @@
     <div id="index" class="container">
         <div class="col-md-12">
             <h1 class="text-center">Give your suggestions</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.
-            </p>
 
-            <input class="form-control input-lg" type="text" placeholder="Type here your suggestion...">
-            <hr/>
-
-            <div class="hashtags">
-                <script>
-                    // placeholders just as example 
-                    for (i = 0; i < 12; i++) {
-                        document.write('<button class="btn btn-default btn-lg" type="submit">#Hashtag ' + i + '</button>');
-                    }
-                </script>
-            </div>
-            <hr/>
-          
-            <div class="row">
-                <div class="col-xs-6">
-                    <a class="btn btn-default btn-block btn-lg" href="#" role="button">Cancel</a>
-                </div>
-
-                <div class="col-xs-6">
-                    <a class="btn btn-primary btn-block btn-lg" href="#" role="button">Send it!</a>
-                </div>
-            </div>
+			<form role="form" action="upload_suggestion.php" method="post">
+				 <div class="form-group">
+				  Suggestion:<br>
+				  <input type="text" class="form-control" name="suggestion" required="required">
+				 </div>
+				 <div class="checkbox">
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="tense"> Tense</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="nervous"> Nervous</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="stressed"> Stressed</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="upset"> Upset</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="sad"> Sad</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="depressed"> Depressed</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="bored"> Bored</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="fatigued"> Fatigued</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="alert"> Alert</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="excited"> Excited</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="elated"> Elated</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="happy"> Happy</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="contented"> Contented</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="serene"> Serene</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="relaxed"> Relaxed</label>
+				  <label class="checkbox-inline"><input type="checkbox" name="mood[]" value="calm"> Calm</label>
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
 
         </div>
 
